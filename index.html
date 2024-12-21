@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <title>La Mia Landing Page</title>
+    <style>
+        /* Stili generali */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background: linear-gradient(135deg, #f4f4f9, #e8e8f0);
+            color: #333;
+            text-align: center;
+        }
+        header {
+            margin-bottom: 20px;
+        }
+        img.logo {
+            width: 120px;
+            height: auto;
+            animation: fadeIn 1.5s ease-in-out;
+        }
+        h1 {
+            font-size: 2.5em;
+            margin-top: 10px;
+            color: #444;
+        }
+        p.description {
+            font-size: 1.2em;
+            margin: 15px 0;
+            color: #555;
+        }
+
+        /* Stili per i link */
+        .links {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 15px;
+        }
+        .links a {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            padding: 10px 20px;
+            text-decoration: none;
+            color: #fff;
+            background-color: #007bff;
+            border-radius: 50px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+        }
+        .links a:hover {
+            background-color: #0056b3;
+            transform: scale(1.05);
+        }
+        .links img {
+            width: 20px;
+            height: 20px;
+        }
+
+        /* Effetti visivi */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: scale(0.9);
+            }
+            to {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+
+        /* Design responsive */
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2em;
+            }
+            p.description {
+                font-size: 1em;
+            }
+            .links a {
+                padding: 10px 15px;
+                font-size: 0.9em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="logo.png" alt="Logo" class="logo">
+        <h1>Benvenuto!</h1>
+    </header>
+    <p class="description">Questa è una breve descrizione del tuo progetto o servizio.</p>
+    <div class="links">
+        <a href="https://wa.me/tuonumero" target="_blank">
+            <img src="whatsapp.png" alt="WhatsApp"> WhatsApp
+        </a>
+        <a href="mailto:tuamail@example.com">
+            <img src="email.png" alt="Email"> Email
+        </a>
+        <a href="https://www.linkedin.com/in/tuoprofilo" target="_blank">
+            <img src="linkedin.png" alt="LinkedIn"> LinkedIn
+        </a>
+    </div>
+</body>
+</html>
