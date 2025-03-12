@@ -1,2 +1,0 @@
-# AFRM
-AFRMStudio website
